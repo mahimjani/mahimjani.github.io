@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Mahim Jani Portfolio</title>
+    <style>
+        body {
+            font-family: 'Exo 2', 'Poiret One', sans-serif;
+            color: #ffffff;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 22px 0;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #FFFFFF;
+            color: #000000;
+            border-radius: 5px;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #about-hero {
+            background-image: url("https://vip-go.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/shutterstock_514474840.jpg?w=750");
+            background-size: cover;
+            background-position: center;
+            height: 5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 60px;
+        }
+
+        #about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        #about-hero h1 {
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            padding: 30px 20px;
+            width: 85%;
+            margin: 0 auto;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: #4CAF50;
+            color: #121212;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+				<li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="about-content">
+        <div class="image-container">
+            <img src="https://www.shutterstock.com/image-photo/businessman-using-smartphone-display-contact-600nw-2216499427.jpg" alt="About Me">
+        </div>
+        <h2>Introduction</h2>
+        <p>Hello! I am Mahim Jani, a passionate web developer with a love for creating dynamic and responsive websites. My journey into the tech world started at a young age, and I have been continuously learning and improving my skills ever since.</p>
+        <p>With a background in computer science, I have a strong foundation in various programming languages and frameworks. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+        
+        <h2>My Journey</h2>
+        <p>I began my coding journey with basic HTML and CSS, gradually expanding my skills to include JavaScript and other advanced technologies. Throughout the years, I have worked on numerous projects that have helped me hone my abilities and gain practical experience.</p>
+        <p>My educational background in computer science has provided me with a solid foundation in software development principles, algorithms, and data structures. This knowledge has been instrumental in tackling complex problems and developing efficient solutions.</p>
+        
+        <h2>Professional Experience</h2>
+        <p>Over the years, I have had the opportunity to work with various companies and clients, contributing to successful projects and gaining a wealth of knowledge along the way. Some of my notable experiences include:</p>
+        <ul>
+            <li>Developing a full-stack e-commerce platform using React and Node.js</li>
+            <li>Creating a social networking site with real-time chat functionality</li>
+            <li>Building a responsive portfolio website to showcase my projects and skills</li>
+        </ul>
+
+        <h2>My Passion</h2>
+        <p>What drives me the most is the passion for continuous learning and improvement. The tech industry is ever-evolving, and I strive to stay updated with the latest trends and technologies. Whether it's exploring new frameworks, experimenting with different tools, or working on side projects, I am always eager to expand my knowledge and push my boundaries.</p>
+        
+        <h2>Future Goals</h2>
+        <p>Looking ahead, I aim to deepen my expertise in web development and explore new areas such as machine learning and artificial intelligence. I believe that these technologies have the potential to revolutionize various industries, and I am excited to be part of this transformation.</p>
+        
+        
+        <a href="index.html#about" class="read-more">Back to Main Page</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mahim Jani Portfolio</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Transition effects while scrolling
+        const sections = document.querySelectorAll('section');
+        const options = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
