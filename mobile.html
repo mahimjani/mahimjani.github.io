@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahim Jani Portfolio - Mobile</title>
+    <style>
+        body {
+            font-family: 'Exo 2', 'Poiret One', sans-serif;
+            color: #ffffff;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 22px 0;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        #hero {
+            background-image: url("https://vip-go.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/shutterstock_514474840.jpg?w=750");
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding: 60px;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        #hero h1 {
+            font-size: 2em;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        #hero p {
+            font-size: 1em;
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Mahim Jani Portfolio</h1>
+        <p>Showcasing my work and skills</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Mahim Jani, a passionate web developer with a love for creating dynamic and responsive websites.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I have a diverse set of skills, ranging from front-end development to back-end development.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Over the years, I have worked on a variety of projects, including an e-commerce platform and a social networking site.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>My resume highlights my educational background, professional experience, and technical skills.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>In my blog, I share my thoughts on various topics related to web development and technology.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            <a href="https://github.com/mahimjani" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/jani-mahim-2ba310277/" target="_blank">LinkedIn</a> |
+            <a href="mailto:janimahim04@gmail.com">Email</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mahim Jani Portfolio</p>
+    </footer>
+</body>
+</html>
