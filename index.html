@@ -15,15 +15,18 @@
         }
 
         header {
-            position: absolute;
-            padding: 22px 0;
+			position: absolute;
+			padding: 22px 0;
             width: 100%;
             top: 0;
             z-index: 1000;
             display: flex;
             justify-content: center;
             align-items: right;
+            
             transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+			
+            
         }
 
         nav ul {
@@ -165,32 +168,12 @@
             transform: translateY(0);
         }
     </style>
-    <script>
-        function redirectBasedOnDevice() {
-            // Define the screen width threshold for mobile devices
-            var mobileThreshold = 768; // 768px is commonly used for tablets and smaller
-
-            // Get the screen width
-            var screenWidth = window.innerWidth;
-
-            // URL for the responsive website
-            var responsiveSiteURL = "https://your-github-username.github.io/responsive-site"; // Update with your mobile site URL
-
-            // Check if the device is mobile
-            if (screenWidth <= mobileThreshold) {
-                // Redirect to the responsive site
-                window.location.href = responsiveSiteURL;
-            }
-        }
-
-        // Run the function on page load
-        window.onload = redirectBasedOnDevice;
-    </script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
+                
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
