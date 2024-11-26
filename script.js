@@ -85,3 +85,10 @@ contactForm.addEventListener('submit', (e) => {
         contactForm.reset();
     }, 500);
 });
+
+// Disable right-click
+document.addEventListener('contextmenu', function (event) {
+    event.preventDefault();
+    alert("Right-click is disabled on this website.");
+  });
+  
