@@ -55,7 +55,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,6 +101,15 @@ nav {
 
 .nav-links a:hover {
     color: var(--primary-color);
+}
+nav {
+    position: fixed; /* Ensure navbar stays at the top */
+    z-index: 1000; /* Keep it above other content */
+    width: 100%; /* Stretch navbar across the top */
+}
+
+main, header {
+    margin-top: 4rem; /* Adjust this to match the navbar height */
 }
 
 /* Home Section */
