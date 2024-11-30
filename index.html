@@ -14,13 +14,33 @@
       // Disable right-click
       document.addEventListener('contextmenu', (e) => e.preventDefault());
     
-      // Disable F12 and other developer tools shortcuts
+      // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        if (
+          e.key === 'F12' || 
+          (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) || 
+          (e.ctrlKey && e.key === 'U')
+        ) {
           e.preventDefault();
+          alert("This action is disabled!");
         }
       });
+    
+      // Additional tampering detection
+      const monitorDevTools = () => {
+        const devtools = /./;
+        devtools.toString = () => "devtools";
+        console.log(devtools);
+        if (devtools.toString() === "devtools") {
+          alert("Developer tools detected. Access is restricted!");
+          window.location.href = "about:blank"; // Redirect or take another action
+        }
+      };
+    
+      // Run tampering detection on an interval
+      setInterval(monitorDevTools, 1000);
     </script>
+    
     
   </body>
 </html>
