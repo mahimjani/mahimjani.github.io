@@ -25,20 +25,6 @@
           alert("This action is disabled!");
         }
       });
-    
-      // Additional tampering detection
-      const monitorDevTools = () => {
-        const devtools = /./;
-        devtools.toString = () => "devtools";
-        console.log(devtools);
-        if (devtools.toString() === "devtools") {
-          alert("Developer tools detected. Access is restricted!");
-          window.location.href = "about:blank"; // Redirect or take another action
-        }
-      };
-    
-      // Run tampering detection on an interval
-      setInterval(monitorDevTools, 1000);
     </script>
     
     
